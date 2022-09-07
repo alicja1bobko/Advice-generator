@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   border-radius: 10px;
   max-width: 550px;
 
@@ -44,7 +44,7 @@ body {
 }
 
 .advice-text {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   padding: 2rem 0rem 1rem;
   line-height: 2.3rem;
@@ -75,9 +75,13 @@ body {
     .advice-text{
       padding: 2rem 1rem 1rem;
   }
+
+  .advice-text {
+  font-size: 28px;
+}
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
     .advice-text{
       padding: 2rem 2rem 1rem;
   }
