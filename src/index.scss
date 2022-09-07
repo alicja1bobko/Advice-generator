@@ -1,13 +1,84 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;800&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+body {
+  background-color: $dark-blue;
+  font-family: "Montserrat", sans-serif;
+  color: $light-cyan;
+  height: 100vh;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: auto 0px;
+
+}
+
+.advice-container {
+  background-color: $dark-grayish-blue;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  max-width: 550px;
+
+}
+
+.advice-id {
+  font-size: 14px;
+  color: $neon-green;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.advice-text {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 2rem 0rem 1rem;
+  line-height: 2.3rem;
+  margin: 0 auto;
+}
+
+.divider{
+  padding: 1rem 0 2rem;
+  
+}
+
+#dice {
+  background-color: $neon-green;
+  border: none;
+  border-radius: 50%;
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  margin: 0 auto -60px;
+}
+
+#dice:hover {
+  box-shadow: 0 0 30px 1px $neon-green;
+}
+
+@media (min-width: 794px) {
+    .advice-text{
+      padding: 2rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 1440px) {
+    .advice-text{
+      padding: 2rem 2rem 1rem;
+  }
 }
